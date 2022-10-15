@@ -25,13 +25,25 @@
   </header>
 
   <main class="main">
-    <section class="review">
-      <h1 class="review__title">
+    <h1 class="visually-hidden">Помогите нам стать лучше!</h1>
+
+    <section class="main-header main-header--form-page">
+      <h2 class="main-header__title">
         Оставьте свой отзыв
-      </h1>
-      <p class="review__text">
+      </h2>
+
+      <p class="main-header__text">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
+    </section>
+
+
+
+
+    <section class="review">
+      <h2 class="visually-hidden">
+        Заполните, пожалуйста, форму отзыва.
+      </h2>
 
       <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review-form__fieldset review-form__fieldset--name">
@@ -104,9 +116,10 @@
 
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Опишите свои эмоции:</legend>
-          <input class="review-form__input review-form__input--message" type="text"
-            placeholder="Опишите подробно все свои восторги" name="message">
 
+
+          <textarea class="review-form__textarea" name="message" cols="30" rows="10"
+            placeholder="Опишите подробно все свои восторги"> </textarea>
         </fieldset>
 
 
