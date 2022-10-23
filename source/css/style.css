@@ -10,5 +10,52 @@
   font-weight: 700;
   src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+  background-color: #FFFFFF;
+}
+.site-navigation {
+  background-color: #81B3D2;
+}
+.button {
+  background-color: #81B3D2;
+}
+.main-header {
+  background-image: url("../img/mount-back-welcome-section.jpg");
+  background-repeat: no-repeat;
+}
+.main-header--index-page {
+  background-image: url("../img/text-welcome-sedona etc.svg"), url("../img/mount-back-welcome-section.jpg");
+  background-repeat: no-repeat, no-repeat;
+}
+.benefits__item {
+  background-color: #EEEEEE;
+}
+.benefits__item--big {
+  background-color: #81B3D2;
+}
+.benefits__item--street-photo {
+  background-image: url("../img/street-benefits-section.jpg");
+  background-repeat: no-repeat;
+}
+.entertainments {
+  background-color: #FFFFFF;
+}
+.map {
+  background-image: url("../img/map-back-map-section.png");
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */
