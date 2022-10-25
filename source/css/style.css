@@ -47,19 +47,19 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: -webkit-max-content 1fr -webkit-min-content;
+  grid-template-rows: max-content 1fr min-content;
   align-content: start;
 }
 .header {
   display: flex;
   flex-wrap: wrap;
-  outline: 5px solid rgba(253, 249, 0, 0.363);
-  outline-offset: -5px;
 }
 .header__home-link {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -30px;
+  z-index: 1;
 }
 .site-navigation {
   position: relative;
@@ -71,7 +71,6 @@ img {
   color: #FFFFFF;
 }
 .site-navigation__list {
-  background-color: #81B3D2;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -84,6 +83,7 @@ img {
   padding: 0;
 }
 .site-navigation__item {
+  background-color: #81B3D2;
   text-align: center;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
@@ -93,6 +93,13 @@ img {
   height: 23px;
   position: absolute;
   right: 20px;
+  border: none;
+  background-color: transparent;
+  margin-top: 17px;
+}
+.site-navigation__dropdown--burger {
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
 }
 .button {
   background-color: #81B3D2;
@@ -100,14 +107,20 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: #FFFFFF;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 .main-header {
   background-image: url("../img/mount-back-welcome-section.jpg");
   background-repeat: no-repeat;
+  text-align: center;
 }
 .main-header--index-page {
   background-image: url("../img/text-welcome-sedona etc.svg"), url("../img/mount-back-welcome-section.jpg");
   background-repeat: no-repeat, no-repeat;
+  background-position: center 90px, top;
 }
 .main-header__title {
   font-weight: 700;
@@ -141,9 +154,16 @@ img {
 }
 .benefits__item {
   background-color: #EEEEEE;
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .benefits__item--big {
   background-color: #81B3D2;
+  display: block;
+  min-height: 470px;
 }
 .benefits__item--big .benefits__title,
 .benefits__item--big .benefits__text,
@@ -153,10 +173,12 @@ img {
 .benefits__item--street-photo {
   background-image: url("../img/street-benefits-section.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .benefits__item--bridge-photo {
   background-image: url("../img/devils-bridge-benefits-section.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .benefits__title {
   font-weight: 700;
@@ -181,6 +203,10 @@ img {
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .entertainments__title {
   font-weight: 700;
@@ -193,6 +219,14 @@ img {
   line-height: 21px;
   color: #333333;
 }
+.booking {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 287px;
+  align-items: center;
+  text-align: center;
+}
 .booking__text {
   font-weight: 400;
   font-size: 14px;
@@ -204,14 +238,91 @@ img {
   font-size: 21px;
   line-height: 26px;
 }
+.booking__button {
+  width: 280px;
+}
 .map {
   background-image: url("../img/map-back-map-section.png");
   background-repeat: no-repeat;
+  min-width: 320px;
+  min-height: 350px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .hash__item {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social__item {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+  margin-right: 6px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__item--twitter::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background-image: url("../img/social/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__item--facebook::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background-image: url("../img/social/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__item--youtube::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/social/icon-youtube.svg");
+}
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 .developer__text {
   font-weight: 400;

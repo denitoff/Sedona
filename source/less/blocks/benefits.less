@@ -2,20 +2,22 @@
   .outline3();
 }
 .benefits__list{
-  .margin-padding-0();
+  .margin-padding--0();
 }
 
 .benefits__item{
   background-color: @basic-gray--light;
-  height: 1000px;
-  background-color: red;
-  background-color: red;
-
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .benefits__item--big
 {
   background-color: @basic-blue;
+  display: block;
   min-height: 470px;
 }
 .benefits__item--big .benefits__title,
@@ -30,11 +32,14 @@ color: @basic-white;
 
   background-image: url("../img/street-benefits-section.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
+
 }
 .benefits__item--bridge-photo{
 
   background-image: url("../img/devils-bridge-benefits-section.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .benefits__title{

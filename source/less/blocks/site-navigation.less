@@ -1,5 +1,4 @@
 .site-navigation{
-
   position: relative;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .site-navigation__list{
-  background-color: @basic-blue;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -24,6 +23,7 @@
   .margin-padding--0();
 }
 .site-navigation__item{
+   background-color: @basic-blue;
   text-align: center;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
@@ -33,4 +33,12 @@
   height: 23px;
   position: absolute;
   right:20px;
+  border: none;
+  background-color:@basic-transparent;
+  margin-top: 17px;
+}
+
+.site-navigation__dropdown--burger{
+background-image: url("../img/icon-menu-burger.svg");
+background-repeat: no-repeat;
 }
