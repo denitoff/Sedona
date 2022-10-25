@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Сайт городка Седона - главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,16 +14,16 @@
       <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
     </a>
     <nav class="site-navigation">
-      <button class="site-navigation__dropdown" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
       <ul class="site-navigation__list">
-        <li class="site-navigation__item"><a href="#">Главная</a></li>
-        <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
-        <li class="site-navigation__item"><a href="#">Форма отзыва</a></li>
-        <li class="site-navigation__item"><a href="#">HTML Academy</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
       </ul>
-      <button class="site-navigation__dropdown site-navigation__dropdown--close" type="button"><span
-          class="visually-hidden">Закрыть меню</span> </button>
+      <button class="site-navigation__dropdown" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
+
   </header>
 
   <main class="main">
@@ -144,7 +145,8 @@
 
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="developer__link" href=""><span class="visually-hidden">HTML Academy</span> <img src="img/htmlacademy-logo.svg" alt=""></a>
+      <a class="developer__link" href=""><span class="visually-hidden">HTML Academy</span> <img
+          src="img/htmlacademy-logo.svg" alt=""></a>
     </div>
 
 
