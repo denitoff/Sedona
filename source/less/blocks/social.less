@@ -13,56 +13,22 @@
   height: 48px;
   background-color: @basic-blue;
   margin-right: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 .social__item:last-child{
 margin-right: 0;
 }
 
-.social__item::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 14px;
-  left: 14px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.social__item--twitter::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 14px;
-  left: 14px;
+.social__item--twitter{
   background-image: url("../img/social/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.social__item--facebook::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 14px;
-  left: 14px;
+}
+.social__item--facebook{
   background-image: url("../img/social/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.social__item--youtube::before{
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 14px;
-  left: 14px;
-  background-repeat: no-repeat;
-  background-position: center;
+.social__item--youtube{
   background-image: url("../img/social/icon-youtube.svg");
-
 }
