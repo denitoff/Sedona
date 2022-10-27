@@ -114,18 +114,27 @@ img {
   color: #FFFFFF;
   display: block;
   padding: 15px;
-  width: auto;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  text-transform: inherit;
 }
 .main-header {
-  background-image: url("../img/mount-back-welcome-section.jpg");
-  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
   text-align: center;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 90px, top;
 }
 .main-header--index-page {
   background-image: url("../img/text-welcome-sedona etc.svg"), url("../img/mount-back-welcome-section.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 90px, top;
+  min-height: 630px;
+}
+.main-header--inner-page {
+  background-image: url("../img/SEDONA.svg"), url("../img/mount-back-welcome-section.jpg");
+  min-height: 630px;
 }
 .main-header__title {
   font-weight: 700;
@@ -137,15 +146,6 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
-}
-.main-header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.main-header--index-page {
-  min-height: 630px;
 }
 .benefits__list {
   margin: 0;
@@ -309,6 +309,93 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+}
+.review-form__legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.review-form__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+}
+.review-form__input {
+  background-color: #F2F2F2;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__input::-moz-placeholder {
+  color: #000000;
+}
+.review-form__input::placeholder {
+  color: #000000;
+}
+.review-form__label--contacts {
+  position: relative;
+}
+.review-form__label--phone::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  right: 50px;
+  background-color: #E6E6E6;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.review-form__label--email::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  right: 50px;
+  background-color: #E6E6E6;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.review-form__label--questionnaire {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+.review-form__textarea::-moz-placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.review-form__textarea::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.review-form__popup {
+  text-align: center;
+}
+.popup__subject {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.popup__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

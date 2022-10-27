@@ -1,0 +1,94 @@
+
+.review-form__legend{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.review-form__label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: @basic-gray--dark;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-form__input{
+  background-color: @input-background;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+
+}
+.review-form__input::placeholder{
+  color: @basic-black;
+
+
+}
+
+.review-form__label--contacts{
+  position: relative;
+}
+
+.review-form__label--phone::after{
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  right:50px;
+  background-color: @pseudo-contacts-background;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.review-form__label--email::after{
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  right:50px;
+  background-color: @pseudo-contacts-background;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.review-form__label--questionnaire{
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.review-form__textarea::placeholder
+{font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @basic-black;}
+
+  .review-form__popup{
+    text-align: center;
+  }
+
+.popup__subject{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.popup__text
+{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

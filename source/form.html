@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Сайт городка Седона - страница обратной связи</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -12,22 +14,22 @@
       <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
     </a>
     <nav class="site-navigation">
-      <button class="site-navigation__dropdown" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
       <ul class="site-navigation__list">
-        <li class="site-navigation__item"><a href="#">Главная</a></li>
-        <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
-        <li class="site-navigation__item"><a href="#">Форма отзыва</a></li>
-        <li class="site-navigation__item"><a href="#">HTML Academy</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
+        <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
       </ul>
-      <button class="site-navigation__dropdown site-navigation__dropdown--close" type="button"><span
-          class="visually-hidden">Закрыть меню</span> </button>
+      <button class="site-navigation__dropdown site-navigation__dropdown--burger  " type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
+
   </header>
 
   <main class="main">
     <h1 class="visually-hidden">Помогите нам стать лучше!</h1>
 
-    <section class="main-header main-header--form-page">
+    <section class="main-header main-header--inner-page">
       <h2 class="main-header__title">
         Оставьте свой отзыв
       </h2>
@@ -36,8 +38,6 @@
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
-
-
 
 
     <section class="review">
@@ -64,12 +64,12 @@
 
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Контактная информация:</legend>
-          <label class="review-form__label review-form__label--contacts">Контактный телефон*:
+          <label class="review-form__label review-form__label--contacts review-form__label--phone ">Контактный телефон*:
             <input class="review-form__input review-form__input--tel" type="tel" name="tel"
               placeholder="Введите телефон" required>
           </label>
 
-          <label class="review-form__label review-form__label--contacts">Электронная почта*:
+          <label class="review-form__label review-form__label--contacts review-form__label--email ">Электронная почта*:
             <input class="review-form__input review-form__input--email" type="email" name="email"
               placeholder="Введите e-mail" required>
           </label>
@@ -153,22 +153,24 @@
     </div>
 
 
-    <ul class=social>
-      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Седона в
+    <ul class="social">
+      <li class="social__item social__item--twitter"><a class="social__link" href="#"><span class="visually-hidden">Седона в
             Twitter</span></a></li>
-      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Седона в
+      <li class="social__item social__item--facebook"><a class="social__link" href="#"><span class="visually-hidden">Седона в
             Facebook</span></a></li>
-      <li class="social__item"><a class="social__link" href="#"><span class="visually-hidden">Седона в
+      <li class="social__item social__item--youtube"><a class="social__link" href="#"><span class="visually-hidden">Седона в
             YouTube</span></a></li>
     </ul>
 
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="developer__link" href=""><span class="visually-hidden">HTML Academy</span> <img src="img/htmlacademy-logo.svg" alt=""></a>
+      <a class="developer__link" href="#"><span class="visually-hidden">HTML Academy</span> <img
+          src="img/htmlacademy-logo.svg" alt=""></a>
     </div>
 
 
   </footer>
+
 
 
 </body>
