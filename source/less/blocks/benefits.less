@@ -1,6 +1,14 @@
 
 .benefits__list{
   .margin-padding--0();
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+
+
 }
 
 .benefits__item{
@@ -8,56 +16,92 @@
   min-height: 168px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+  flex-grow: 1;
 }
 
-.benefits__item--big
-{
-  background-color: @basic-blue;
-  display: block;
-  min-height: 470px;
+.benefits__container{
+
+  min-height: 211px;
+  flex-grow: 1;
+  @media (min-width: @tablet-width) {
+    max-width: 33.33%;
+    min-height: 256px;
+  }
 }
+
+.benefits__item--big{
+  background-color: @basic-blue;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+.benefits__item--big-reverse{
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+
+.benefits__item--big::after{
+  content:"";
+  min-height: 260px;
+
+  flex-grow: 1;
+  @media (min-width: @tablet-width) {
+    min-width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 800px;
+  }
+}
+
+.benefits__item--street-photo.benefits__item--big::after{
+  background-image: url("../img/street-benefits-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__item--bridge-photo.benefits__item--big::after{
+  background-image: url("../img/devils-bridge-benefits-section.jpg");
+  background-repeat: no-repeat;
+}
+
 .benefits__item--big .benefits__title,
 .benefits__item--big .benefits__text,
 .benefits__item--big .benefits__number
 {
-color: @basic-white;
-}
-
-.benefits__item--street-photo
-{
-
-  background-image: url("../img/street-benefits-section.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  color: @basic-white;
 
 }
-.benefits__item--bridge-photo{
 
-  background-image: url("../img/devils-bridge-benefits-section.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
 .benefits__title{
   font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-.margin-padding--0();
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 40px;
 }
+
 
 .benefits__text{
   font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-color: @basic-gray--dark;
+  font-size: 14px;
+  line-height: 21px;
+  color: @basic-gray--dark;
 }
-
 
 .benefits__number{
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color:@basic-gray--dark;
+}
+.entertainments__title{
+  margin-top: 40px;
 }

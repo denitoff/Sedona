@@ -1,3 +1,37 @@
+.review-form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+.review-form__fieldset--impression{
+  @media (min-width: @tablet-width){
+    order: -1;
+    flex-grow: 1;
+  }
+}
+
+.review-form__fieldset--name{
+  @media (min-width: @tablet-width){
+    flex-grow: 1;
+  }
+}
+
+// ------------------------------------------------------------
+@media (min-width: @tablet-width){
+  .review-form__fieldset--textarea,
+  .review-form__fieldset--places,
+  .review-form__fieldset--contact{
+    width: 100%;}
+}
+
+
 
 .review-form__legend{
   font-weight: 700;
@@ -69,6 +103,10 @@
   line-height: 26px;
   text-transform: none;
 }
+.review-form__textarea{
+  width: 100%;
+}
+
 
 .review-form__textarea::placeholder
 {font-weight: 700;
@@ -76,9 +114,9 @@
   line-height: 26px;
   color: @basic-black;}
 
-  .review-form__popup{
-    text-align: center;
-  }
+.review-form__popup{
+  text-align: center;
+}
 
 .popup__subject{
   font-weight: 700;

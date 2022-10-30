@@ -1,15 +1,19 @@
 .header{
-display: flex;
-flex-wrap: wrap;
-position: relative;
-flex-direction: column;
+  background-color: @basic-white;
+  position: relative;
+  min-height: 56px;
+  @media (min-width: @tablet-width) {
+    max-height: 56px;
+  }
 }
 
-
 .header__home-link{
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -30px;
+  width: 102px;
+  height: 84px;
   margin-right: auto;
-  margin-bottom: -30px;
-  order:1;
-  z-index: 1;
+  margin-left: auto;
 }

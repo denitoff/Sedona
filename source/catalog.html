@@ -3,162 +3,169 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт городка Седона - галерея</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="header__home-link" href="#">
-      <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
-    </a>
-    <nav class="site-navigation">
+  <div class="page__container">
+    <header class="header">
+      <a class="header__home-link" href="#">
+        <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
+      </a>
+      <nav class="site-navigation">
 
-      <ul class="site-navigation__list">
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
-      </ul>
-      <button class="site-navigation__dropdown site-navigation__dropdown--burger  " type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </nav>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
+        </ul>
+        <button class="site-navigation__dropdown site-navigation__dropdown--burger  " type="button"><span
+            class="visually-hidden">Открыть меню</span></button>
+      </nav>
 
-  </header>
-
-
-  <main class="main">
-    <h1 class="visually-hidden">Галерея Седоны.</h1>
-
-    <section class="main-header main-header--inner-page">
-      <h2 class="main-header__title">
-        Фото и видео
-      </h2>
-      <p class="main-header__text">
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
-    </section>
-
-    <section class="photo-gallery">
-      <h3 class="visually-hidden">Фото Седоны</h3>
-
-      <ul class="photo">
-        <li class="photo__item">
-          <figure class="photo__thumbnail">
-            <a class="photo__link-to-original" href="#">
-              <img class="photo__image" src="img/gallery/sunset-road.jpg"
-                alt="Догога уходящая в закат, в дали виден каньон">
-            </a>
-            <figcaption class="photo__caption">
-              <h3 class="photo__title">Неродные просторы</h3>
-              <p class="photo__author">Автор фото: <span> Борис</span></p>
-              <span aria-label="счетчик лайков" class="photo__likes">1350</span>
-            </figcaption>
-          </figure>
-
-        <li class="photo__item">
-          <figure class="photo__thumbnail">
-            <a class="photo__link-to-original" href="#">
-              <img class="photo__image" src="img/gallery/cactus.jpg" alt="Цветущий кактус на фоне каньона">
-            </a>
-            <figcaption class="photo__caption">
-              <h3 class="photo__title">Местная растительность</h3>
-              <p class="photo__author">Автор фото: <span> Сергей</span></p>
-              <span aria-label="счетчик лайков" class="photo__likes">1350</span>
-            </figcaption>
-          </figure>
-
-        <li class="photo__item">
-          <figure class="photo__thumbnail">
-            <a class="photo__link-to-original" href="#">
-              <img class="photo__image" src="img/gallery/forest-serpantine.jpg"
-                alt="Дорога серпантином проходящая через лес, ведет куда-то наверх">
-            </a>
-            <figcaption class="photo__caption">
-              <h3 class="photo__title">Дорога на север</h3>
-              <p class="photo__author">Автор фото: <span> Борис</span></p>
-              <span aria-label="счетчик лайков" class="photo__likes">96</span>
-            </figcaption>
-          </figure>
-
-        <li class="photo__item">
-          <figure class="photo__thumbnail">
-            <a class="photo__link-to-original" href="#">
-              <img class="photo__image" src="img/gallery/devils-bridge.jpg"
-                alt="Природный мост из каменной породы, на фоне каньона">
-            </a>
-            <figcaption class="photo__caption">
-              <h3 class="photo__title">Мост дьявола</h3>
-              <p class="photo__author">Автор фото: <span> Антон</span></p>
-              <span aria-label="счетчик лайков" class="photo__likes">254</span>
-            </figcaption>
-          </figure>
-        </li>
-
-      </ul>
+    </header>
 
 
-    </section>
+    <main class="main">
+      <h1 class="visually-hidden">Галерея Седоны.</h1>
+
+      <section class="main-header main-header--inner-page">
+        <h2 class="main-header__title">
+          Фото и видео
+        </h2>
+        <p class="main-header__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </section>
+
+      <section class="photo-gallery">
+        <h3 class="visually-hidden">Фото Седоны</h3>
+
+        <ul class="photo">
+          <li class="photo__item">
+            <figure class="photo__thumbnail">
+              <a class="photo__link-to-original" href="#">
+                <img class="photo__image" src="img/gallery/sunset-road.jpg"
+                  alt="Догога уходящая в закат, в дали виден каньон">
+              </a>
+              <figcaption class="photo__caption">
+                <h3 class="photo__title">Неродные просторы</h3>
+                <p class="photo__author">Автор фото: <span> Борис</span></p>
+                <span aria-label="счетчик лайков" class="photo__likes">1350</span>
+              </figcaption>
+            </figure>
+
+          <li class="photo__item">
+            <figure class="photo__thumbnail">
+              <a class="photo__link-to-original" href="#">
+                <img class="photo__image" src="img/gallery/cactus.jpg" alt="Цветущий кактус на фоне каньона">
+              </a>
+              <figcaption class="photo__caption">
+                <h3 class="photo__title">Местная растительность</h3>
+                <p class="photo__author">Автор фото: <span> Сергей</span></p>
+                <span aria-label="счетчик лайков" class="photo__likes">1350</span>
+              </figcaption>
+            </figure>
+
+          <li class="photo__item">
+            <figure class="photo__thumbnail">
+              <a class="photo__link-to-original" href="#">
+                <img class="photo__image" src="img/gallery/forest-serpantine.jpg"
+                  alt="Дорога серпантином проходящая через лес, ведет куда-то наверх">
+              </a>
+              <figcaption class="photo__caption">
+                <h3 class="photo__title">Дорога на север</h3>
+                <p class="photo__author">Автор фото: <span> Борис</span></p>
+                <span aria-label="счетчик лайков" class="photo__likes">96</span>
+              </figcaption>
+            </figure>
+
+          <li class="photo__item">
+            <figure class="photo__thumbnail">
+              <a class="photo__link-to-original" href="#">
+                <img class="photo__image" src="img/gallery/devils-bridge.jpg"
+                  alt="Природный мост из каменной породы, на фоне каньона">
+              </a>
+              <figcaption class="photo__caption">
+                <h3 class="photo__title">Мост дьявола</h3>
+                <p class="photo__author">Автор фото: <span> Антон</span></p>
+                <span aria-label="счетчик лайков" class="photo__likes">254</span>
+              </figcaption>
+            </figure>
+          </li>
+
+        </ul>
 
 
-    <section class="video-gallery">
-      <h3 class="visually-hidden">Видео Седоны</h3>
-      <p class="video-gallery__subject"> Все еще сомневаетесь?</p>
-      <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
+      </section>
 
-      <figure class="video">
-        <img class="video__video" alt="превью" src="img/gallery/video-presentation.jpg">
-        <figcaption class="visually-hidden"> видео-презентация о Седоне</figcaption>
-      </figure>
 
-      <div class="video-interface">
-        <div
-          class="video-interface__button video-interface__button--start video-interface__button--stop video-interface__button--tostart ">
-          кнопка воспроизведения</div>
-        <div class="video-interface-range"> шкала
-          <div class="video-interface-range__toggle">тогл</div>
+      <section class="video-gallery">
+        <h3 class="visually-hidden">Видео Седоны</h3>
+        <p class="video-gallery__subject"> Все еще сомневаетесь?</p>
+        <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной
+          раз!</p>
+
+        <figure class="video">
+          <img class="video__video" alt="превью" src="img/gallery/video-presentation.jpg">
+          <figcaption class="visually-hidden"> видео-презентация о Седоне</figcaption>
+        </figure>
+
+        <div class="video-interface">
+          <div
+            class="video-interface__button video-interface__button--start video-interface__button--stop video-interface__button--tostart ">
+            кнопка воспроизведения</div>
+          <div class="video-interface-range"> шкала
+            <div class="video-interface-range__toggle">тогл</div>
+          </div>
+          <div class="video-interface__subtitle">субтитры</div>
+          <div class="video-interface__fullscreen">на весь экран</div>
         </div>
-        <div class="video-interface__subtitle">субтитры</div>
-        <div class="video-interface__fullscreen">на весь экран</div>
+
+
+
+      </section>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="hash">
+        <p class="hash__item">#visitSEDONA</p>
       </div>
 
 
+      <ul class="social">
+        <li class="social__item social__item--twitter"><a class="social__link" href="#"><span
+              class="visually-hidden">Седона в
+              Twitter</span></a></li>
+        <li class="social__item social__item--facebook"><a class="social__link" href="#"><span
+              class="visually-hidden">Седона в
+              Facebook</span></a></li>
+        <li class="social__item social__item--youtube"><a class="social__link" href="#"><span
+              class="visually-hidden">Седона в
+              YouTube</span></a></li>
+      </ul>
 
-    </section>
-
-
-
-
-
-
-  </main>
-
-  <footer class="footer">
-    <div class="hash">
-      <p class="hash__item">#visitSEDONA</p>
-    </div>
-
-
-    <ul class="social">
-      <li class="social__item social__item--twitter"><a class="social__link" href="#"><span class="visually-hidden">Седона в
-            Twitter</span></a></li>
-      <li class="social__item social__item--facebook"><a class="social__link" href="#"><span class="visually-hidden">Седона в
-            Facebook</span></a></li>
-      <li class="social__item social__item--youtube"><a class="social__link" href="#"><span class="visually-hidden">Седона в
-            YouTube</span></a></li>
-    </ul>
-
-    <div class="developer">
-      <p class="developer__text">Разработано</p>
-      <a class="developer__link" href="#"><span class="visually-hidden">HTML Academy</span> <img
-          src="img/htmlacademy-logo.svg" alt=""></a>
-    </div>
+      <div class="developer">
+        <p class="developer__text">Разработано</p>
+        <a class="developer__link" href="#"><span class="visually-hidden">HTML Academy</span> <img
+            src="img/htmlacademy-logo.svg" alt=""></a>
+      </div>
 
 
-  </footer>
+    </footer>
 
-
+  </div>
 </body>
 
 </html>
