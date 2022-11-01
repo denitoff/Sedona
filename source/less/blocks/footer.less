@@ -4,4 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;}
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+}

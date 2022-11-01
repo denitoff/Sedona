@@ -9,6 +9,12 @@
   }
 }
 
+.review-form__fieldset{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .review-form__fieldset--impression{
   @media (min-width: @tablet-width){
@@ -31,6 +37,28 @@
     width: 100%;}
 }
 
+.review-form__fieldset--places{
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.review-form__fieldset--contact{
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 
 .review-form__legend{
@@ -114,19 +142,13 @@
   line-height: 26px;
   color: @basic-black;}
 
-.review-form__popup{
-  text-align: center;
+.review-form__prompt{
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
-.popup__subject{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
 
-.popup__text
-{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
+
+
