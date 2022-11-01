@@ -33,6 +33,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.hide {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .hide--desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hide--tablet {
+    display: none;
+  }
+}
 .page {
   height: 100%;
 }
@@ -140,11 +153,6 @@ img {
   position: absolute;
   right: 20px;
   bottom: 15px;
-}
-@media (min-width: 768px) {
-  .site-navigation__dropdown {
-    display: none;
-  }
 }
 .site-navigation__dropdown--burger {
   background-image: url("../img/icon-menu-burger.svg");

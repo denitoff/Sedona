@@ -22,3 +22,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.hide{
+  display: none;
+}
+
+.hide--desktop{
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.hide--tablet{
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
