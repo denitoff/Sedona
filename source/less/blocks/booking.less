@@ -3,8 +3,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 287px;
+  justify-content: center;
   align-items: center;
   text-align: center;
+
+
+
+
+  @media (min-width: @tablet-width) {
+    min-height: 318px;
+
+  }
 }
 .booking__text
 {
@@ -22,4 +31,9 @@
 
 .booking__button{
   min-width: 250px;
+  @media (min-width: @tablet-width) {
+    min-width: 456px;
+
+  }
+
 }

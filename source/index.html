@@ -24,8 +24,9 @@
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
         </ul>
-        <button class="site-navigation__dropdown site-navigation__dropdown--burger hide--tablet  " type="button"><span
-            class="visually-hidden">Открыть меню</span></button>
+        <button
+          class="site-navigation__dropdown site-navigation__dropdown--burger site-navigation__dropdown--none hide--tablet  "
+          type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
 
     </header>
@@ -33,16 +34,20 @@
     <main class="main">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
-      <section class="main-header main-header--index-page">
-        <p class="visually-hidden">Sedona. Welcome to the gorgeous. Because the Grand Canyon Sucks!</p>
+      <div class="main-header__image-container">
 
+        <section class="main-header main-header--index-page">
+          <p class="visually-hidden">Sedona. Welcome to the gorgeous. Because the Grand Canyon Sucks!</p>
+
+      </div>
+      <div class="main-header__text-container">
         <h2 class="main-header__title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
 
 
         <p class="main-header__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-
+      </div>
 
       </section>
 
@@ -60,19 +65,19 @@
               <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
           </li>
-          <li>
-            <ul class="entertainments benefits__item">
-              <li class="entertainments__item benefits__container">
+          <li class="benefits__item--big">
+            <ul class="entertainments ">
+              <li class="entertainments__item  ">
                 <h5 class="entertainments__title entertainments__title--accomadation">Жилье</h5>
                 <p class="entertainments__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
 
-              <li class="entertainments__item benefits__container">
+              <li class="entertainments__item ">
                 <h5 class="entertainments__title entertainments__title--food">Еда</h5>
                 <p class="entertainments__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
 
-              <li class="entertainments__item benefits__container">
+              <li class="entertainments__item ">
                 <h5 class="entertainments__title entertainments__title--suvenirs">Сувениры</h5>
                 <p class="entertainments__text">Не только китайского, но и местного производства!</p>
               </li>
@@ -89,31 +94,31 @@
             </div>
           </li>
 
-          <li class="benefits__item benefits__container">
-            <div class="">
+          <li class="benefits__item ">
 
-              <h4 class="benefits__title ">Небольшая площадь</h4>
-              <span class="benefits__number">— №3 —</span>
-              <p class="benefits__text">Все интересные места находятся очень близко</p>
-            </div>
-          </li>
 
-          <li class="benefits__item benefits__container">
-            <div class="">
-              <h4 class="benefits__title">Красивая дорога</h4>
-              <span class="benefits__number">— №4 —</span>
-              <p class="benefits__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
+            <h4 class="benefits__title ">Небольшая площадь</h4>
+            <span class="benefits__number">— №3 —</span>
+            <p class="benefits__text">Все интересные места находятся очень близко</p>
 
           </li>
 
-          <li class="benefits__item benefits__container">
-            <div class="">
+          <li class="benefits__item ">
 
-              <h4 class="benefits__title">Мало туристов</h4>
-              <span class="benefits__number">— №5 —</span>
-              <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
-            </div>
+            <h4 class="benefits__title">Красивая дорога</h4>
+            <span class="benefits__number">— №4 —</span>
+            <p class="benefits__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+
+
+          </li>
+
+          <li class="benefits__item ">
+
+
+            <h4 class="benefits__title">Мало туристов</h4>
+            <span class="benefits__number">— №5 —</span>
+            <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
+
           </li>
 
         </ul>
@@ -169,6 +174,51 @@
     </footer>
 
   </div>
+  <script>
+
+
+
+
+
+
+
+    var siteNavigationDropdown = document.querySelector(".site-navigation__dropdown");
+    var siteNavigationList = document.querySelector(".site-navigation__list");
+    let windowInnerWidth = window.innerWidth;
+
+
+
+
+    siteNavigationDropdown.classList.remove("site-navigation__dropdown--none");
+    if (windowInnerWidth<768){
+    siteNavigationList.classList.add("site-navigation__list--close");
+
+  }
+  else{
+
+    siteNavigationDropdown.classList.remove("site-navigation__dropdown--burger");
+    siteNavigationDropdown.classList.add("site-navigation__dropdown--cross");
+  }
+
+
+    siteNavigationDropdown.addEventListener("click", function () {
+      if (siteNavigationDropdown.classList.contains("site-navigation__dropdown--burger")) {
+        siteNavigationList.classList.remove("site-navigation__list--close");
+        siteNavigationDropdown.classList.remove("site-navigation__dropdown--burger");
+        siteNavigationDropdown.classList.add("site-navigation__dropdown--cross");
+
+      }
+
+      else {
+        siteNavigationList.classList.add("site-navigation__list--close");
+        siteNavigationDropdown.classList.remove("site-navigation__dropdown--cross");
+        siteNavigationDropdown.classList.add("site-navigation__dropdown--burger");
+      }
+
+    });
+
+
+  </script>
 </body>
 
 </html>

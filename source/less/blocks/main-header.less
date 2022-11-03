@@ -7,22 +7,39 @@
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 40px, top;
+
 }
 
-.main-header--index-page{
+
+.main-header__image-container{
   background-image: url("../img/text-welcome-sedona etc.svg"),
-    url("../img/mount-back-welcome-section.jpg");
-  background-size: 90% 50%,
-    100% 70%;
-  min-height: 630px;
+                    url("../img/intro-triangle.svg"),
+                    url("../img/mount-back-welcome-section.jpg");
+  background-size: 90% 70%,
+                  1200px, //
+                  cover;
+  min-height: 389px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, bottom, center;
+  margin-bottom: -1px;
+
+}
+
+.main-header__text-container{
+  text-align: center;
+  min-height: 206px;
+  background-color: @basic-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-header--inner-page{
   background-image: url("../img/SEDONA.svg"),
     url("../img/mount-back-welcome-section.jpg");
   min-height: 630px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 40px, top;
 }
 
 
@@ -30,6 +47,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 
 .main-header__text
