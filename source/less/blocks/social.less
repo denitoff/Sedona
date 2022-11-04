@@ -5,10 +5,16 @@
   flex-wrap: wrap;
 
 }
+.social__link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .social__item{
   display: block;
-  position: relative;
   width: 48px;
   height: 48px;
   background-color: @basic-blue;
@@ -16,19 +22,18 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  &:hover{
+background-color: @social-hover;
+  }
+  &:active{
+    background-color:@social-down;
+  }
 }
 .social__item:last-child{
   margin-right: 0;
 }
 
-.social__item--twitter{
-  background-image: url("../img/social/icon-twitter.svg");
 
-}
-.social__item--facebook{
-  background-image: url("../img/social/icon-facebook.svg");
-}
-
-.social__item--youtube{
-  background-image: url("../img/social/icon-youtube.svg");
+.social__item:active svg{
+    opacity: 30%;
 }

@@ -11,4 +11,14 @@
   border: none;
   cursor: pointer;
   text-transform: inherit;
+  &:hover{
+    background-color: @button-hover;
+  }
+  &:active{
+    background-color:@button-down;
+    color: fade(@basic-white, 30%);
+  }
+  &:disabled{
+    background-color:@button-disabled;
+  }
 }
