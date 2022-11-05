@@ -39,6 +39,10 @@
       <h1 class="visually-hidden">Помогите нам стать лучше!</h1>
 
       <section class="main-header main-header--inner-page">
+        <div class="main-header__image-container">
+          <p class="visually-hidden">SEDONA</p>
+        </div>
+        <div class="main-header__text-container">
         <h2 class="main-header__title">
           Оставьте свой отзыв
         </h2>
@@ -46,6 +50,7 @@
         <p class="main-header__text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
+      </div>
       </section>
 
 
@@ -74,8 +79,8 @@
 
           <fieldset class=" review-form__fieldset review-form__fieldset--contact ">
             <legend class="review-form__legend">Контактная информация:</legend>
-            <label class="review-form__label review-form__label--contacts review-form__label--phone "><span class="hide--desktop">Контактный</span>
-              телефон*:
+            <label class="review-form__label review-form__label--contacts review-form__label--phone "><span><span class="hide--desktop">Контактный</span>
+              телефон*:</span>
               <input class="review-form__input review-form__input--tel" type="tel" name="tel"
                 placeholder="Введите телефон" required>
             </label>
@@ -91,16 +96,16 @@
           <fieldset class=" review-form__fieldset review-form__fieldset--impression">
             <legend class="review-form__legend">Ваше общее впечатление:</legend>
 
-            <label class="review-form__label review-form__label--questionnaire">Скорее положительное
-              <input class="review-form__input review-form__input--radio" type="radio" name="impression" value="good">
+            <label class="review-form__label review-form__label--questionnaire radio">Скорее положительное
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="impression" value="good">
             </label>
 
-            <label class="review-form__label review-form__label--questionnaire">Скорее отрицательное
-              <input class="review-form__input review-form__input--radio" type="radio" name="impression" value="bad">
+            <label class="review-form__label review-form__label--questionnaire radio">Скорее отрицательное
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="impression" value="bad">
             </label>
 
-            <label class="review-form__label review-form__label--questionnaire">Затрудняюсь ответить
-              <input class="review-form__input review-form__input--radio" type="radio" name="impression"
+            <label class="review-form__label review-form__label--questionnaire radio">Затрудняюсь ответить
+              <input class="review-form__input review-form__input--radio visually-hidden" type="radio" name="impression"
                 value="noAnswer">
             </label>
 
@@ -109,20 +114,20 @@
           <fieldset class=" review-form__fieldset review-form__fieldset--places">
             <legend class="review-form__legend">Посещенные достопримечательности:</legend>
 
-            <label class="review-form__label review-form__label--questionnaire"> Мост Дьявола
-              <input class="review-form__input review-form__input--checkbox" type="checkbox" name="devilsBridge">
+            <label class="review-form__label review-form__label--questionnaire checkbox"> Мост Дьявола
+              <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox" name="devilsBridge">
             </label>
 
-            <label class="review-form__label review-form__label--questionnaire"> Гора-Колокол
-              <input class="review-form__input review-form__input--checkbox" type="checkbox" name="mountBell">
+            <label class="review-form__label review-form__label--questionnaire checkbox"> Гора-Колокол
+              <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox" name="mountBell">
             </label>
 
-            <label class="review-form__label review-form__label--questionnaire"> Слайд-парк
-              <input class="review-form__input review-form__input--checkbox" type="checkbox" name="SlidePark">
+            <label class="review-form__label review-form__label--questionnaire checkbox"> Слайд-парк
+              <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox" name="SlidePark">
             </label>
 
-            <label class="review-form__label review-form__label--questionnaire"> Красные скалы
-              <input class="review-form__input review-form__input--checkbox" type="checkbox" name="RedRock">
+            <label class="review-form__label review-form__label--questionnaire checkbox"> Красные скалы
+              <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox" name="RedRock">
             </label>
 
           </fieldset>
@@ -132,7 +137,7 @@
 
 
             <textarea class="review-form__textarea" name="message" cols="30" rows="10"
-              placeholder="Опишите подробно все свои восторги"> </textarea>
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
 
@@ -140,7 +145,7 @@
           <span class="review-form__prompt">* — обязательные поля</span>
 
 
-          <div class="review-form__popup popup popup--error ">
+          <!-- <div class="review-form__popup popup popup--error ">
             <p class="popup__subject">Что-то пошло не так!</p>
             <p class="popup__text"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="popup__button button" type="button">Ok</button>
@@ -153,7 +158,7 @@
               опубликуем
               его на сайте.</p>
             <button class="popup__button button" type="button">Закрыть окно</button>
-          </div>
+          </div> -->
 
         </form>
 

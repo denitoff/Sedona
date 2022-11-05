@@ -22,8 +22,30 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
   margin-bottom: -1px;
+   @media (min-width: @tablet-width) {
+    min-height: 518px;
+  }
 
 }
+
+
+.main-header--inner-page .main-header__image-container{
+  background-image: url("../img/SEDONA.svg"),
+  url("../img/intro-triangle.svg"),
+    url("../img/mount-back-welcome-section.jpg");
+    background-size: 70% 50%,
+    1200px, //
+    cover;
+min-height: 160px;
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: center, bottom, center;
+margin-bottom: -1px;
+@media (min-width: @tablet-width) {
+min-height: 290px;
+}
+
+}
+
 
 .main-header__text-container{
   text-align: center;
@@ -34,13 +56,18 @@
   justify-content: center;
 }
 
-.main-header--inner-page{
-  background-image: url("../img/SEDONA.svg"),
-    url("../img/mount-back-welcome-section.jpg");
-  min-height: 630px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 40px, top;
+
+.main-header--inner-page .main-header__title{
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    }
+    
+
 }
+
+
 
 
 .main-header__title{
