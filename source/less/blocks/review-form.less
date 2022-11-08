@@ -11,7 +11,17 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
 }
+
+.review__container{
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
 
 .review-form__fieldset{
   position: relative;
@@ -44,18 +54,25 @@
 
   }
 
-
+  @media (min-width: @tablet-width){
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 }
 
 .review-form__fieldset--contact{
-
+  @media (min-width: @tablet-width){
+    border-top:1px solid #E5E5E5;}
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: auto;
+
     justify-content: space-between;
+    border-top:1px solid #E5E5E5;
   }
 }
 
@@ -66,12 +83,21 @@
   @media (min-width: @tablet-width){
     order: -1;
     flex-grow: 1;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+
+    border-right:1px solid #E5E5E5;
+
   }
 }
 
 .review-form__fieldset--name{
   @media (min-width: @tablet-width){
     flex-grow: 1;
+    width: 40%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -81,18 +107,33 @@
   .review-form__fieldset--places,
   .review-form__fieldset--contact{
     width: 100%;
-  min-width: 320px;}
+    min-width: 320px;
+
+  }
 }
+
+.review-form__fieldset--textarea{
+  @media (min-width: @tablet-width) {
+
+
+    border-top:1px solid #E5E5E5;
+
+  }
+}
+
 
 .review-form__fieldset--places{
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+
+    border-top:1px solid #E5E5E5;
+
   }
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -111,12 +152,24 @@
   @media (min-width: @tablet-width)
   {font-weight: 700;
     font-size: 21px;
-    line-height: 26px;}
+    line-height: 26px;
 
 
+  }
+}
+.review-form__fieldset--impression .review-form__legend,
+.review-form__fieldset--name .review-form__legend{
+  @media(min-width: @tablet-width){
+    text-align: left;
+    margin-bottom: 55px;
+
+  }
 }
 
+
+
 .review-form__label{
+
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
@@ -124,9 +177,15 @@
   display: flex;
   width: 100%;
   justify-content: flex-start;
+
+
   align-items: center;
   gap:20px;
+  min-height: 58px; //////////////////////////////////////////
+
 }
+
+
 
 .review-form__input{
   background-color: @input-background;
@@ -137,7 +196,20 @@
   min-height: 58px;
   width: 100%;
   padding-left: 20px;
+  &:hover{
+    background-color: @input-hover;
+  }
+  &:active,
+  &:focus
+  {
+    background-color: @basic-white;
+    outline-color: @input-hover;
+  }
+
 }
+
+
+
 .review-form__input::placeholder{
   color: @basic-black;
 }
@@ -187,17 +259,30 @@
   line-height: 26px;
   text-transform: none;
   position: relative;
-  min-height: 48px;
+
+
 }
 .radio.review-form__label--questionnaire::before{
   content: "";
   width: 18px;
   height: 18px;
   left: 0;
-  background-color:@basic-gray--dark;
   border: 15px solid @input-background;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.review-form__label--questionnaire:hover::before{
+  border-color:@input-hover;
+}
+.review-form__label--questionnaire:active::before{
+  border-color:@input-down;
+  background-color:fade(@basic-gray--dark, 30%);
+}
+
+
+.review-form__input:checked + .radio.review-form__label--questionnaire::before{
+  background-color:@basic-gray--dark;
 }
 
 
@@ -205,13 +290,36 @@
   content: "";
   width: 48px;
   height: 48px;
+
   left: 0;
   background-color: @input-background;
+
+  cursor: pointer;
+}
+
+.checkbox.review-form__label--questionnaire:hover::before{
+  background-color:@input-hover;
+}
+.checkbox.review-form__label--questionnaire:active::before{
+  background-color:@input-down;
+  background-image: url("../img/tick-opacity30.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.review-form__input:checked + .checkbox.review-form__label--questionnaire::before{
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-cursor: pointer;
 }
+
+.review-form__input:focus + .review-form__label--questionnaire::before{
+  outline: 2px solid gray;
+}
+
 
 .review-form__textarea{
   width: 100%;
@@ -219,6 +327,7 @@ cursor: pointer;
   border: none;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 15px;
   margin-bottom: 50px;
 }
 
@@ -233,9 +342,10 @@ cursor: pointer;
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
+    margin-left: auto;
   }
 }
 
-
-
-
+.review-form__input--field-error{
+  background-color: red;
+}
