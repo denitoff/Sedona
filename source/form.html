@@ -15,29 +15,24 @@
 <body class="page__body">
   <div class="page__container">
     <header class="header">
-      <a class="header__home-link" href="#">
+      <a class="header__home-link" href="index.html">
         <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
       </a>
       <nav class="site-navigation">
-
         <ul class="site-navigation__list">
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Главная</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Фото и видео</a></li>
-
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Форма отзыва</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#">HTML Academy</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="index.html">Главная</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="catalog.html">Фото и видео</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link current" href="#">Форма отзыва</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="https://htmlacademy.ru/">HTML
+              Academy</a></li>
         </ul>
         <button
-          class="site-navigation__dropdown site-navigation__dropdown--burger site-navigation__dropdown--none hide--tablet  "
+          class="site-navigation__dropdown site-navigation__dropdown--burger site-navigation__dropdown--none hide-tablet  "
           type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
-
     </header>
-
-
     <main class="main">
       <h1 class="visually-hidden">Помогите нам стать лучше!</h1>
-
       <section class="main-header main-header--inner-page">
         <div class="main-header__image-container">
           <p class="visually-hidden">SEDONA</p>
@@ -46,124 +41,90 @@
           <h2 class="main-header__title">
             Оставьте свой отзыв
           </h2>
-
           <p class="main-header__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
       </section>
-
       <div class="main__container">
         <section class="review">
-
           <h3 class="visually-hidden">
             Заполните, пожалуйста, форму отзыва.
           </h3>
-
           <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-
             <fieldset class="review-form__fieldset review-form__fieldset--name">
               <legend class="review-form__legend">Представьтесь:</legend>
               <label class="review-form__label">Имя*:
                 <input class="review-form__input firstname" type="text" name="firstname" placeholder="Ваше имя">
               </label>
-
               <label class="review-form__label">Фамилия*:
                 <input class="review-form__input secondname " type="text" name="secondname" placeholder="Ваша фамилия">
               </label>
-
               <label class="review-form__label">Отчество:
                 <input class="review-form__input" type="text" name="thirdname" placeholder="Ваше отчество">
               </label>
-
             </fieldset>
-
             <fieldset class=" review-form__fieldset review-form__fieldset--contact ">
               <legend class="review-form__legend">Контактная информация:</legend>
               <label class="review-form__label review-form__label--contacts review-form__label--phone "><span><span
-                    class="hide--desktop">Контактный</span>
+                    class="hide-desktop">Контактный</span>
                   телефон*:</span>
                 <input class="review-form__input review-form__input--tel" type="tel" name="tel"
                   placeholder="Введите телефон">
               </label>
-
               <label class="review-form__label review-form__label--contacts review-form__label--email ">Электронная
                 почта*:
                 <input class="review-form__input review-form__input--email" type="email" name="email"
                   placeholder="Введите e-mail">
               </label>
-
             </fieldset>
-
             <fieldset class=" review-form__fieldset review-form__fieldset--impression">
               <legend class="review-form__legend">Ваше общее впечатление:</legend>
-
               <input class="review-form__input review-form__input--radio visually-hidden" id="good" type="radio"
                 name="impression" value="good" checked>
               <label for="good" class="review-form__label review-form__label--questionnaire radio">Скорее положительное
-
               </label>
-
               <input class="review-form__input review-form__input--radio visually-hidden" id="bad" type="radio"
                 name="impression" value="bad">
               <label for="bad" class="review-form__label review-form__label--questionnaire radio">Скорее отрицательное
-
               </label>
-
               <input class="review-form__input review-form__input--radio visually-hidden" id="noAnswer" type="radio"
                 name="impression" value="noAnswer">
               <label for="noAnswer" class="review-form__label review-form__label--questionnaire radio">Затрудняюсь
                 ответить
-
               </label>
-
             </fieldset>
-
             <fieldset class=" review-form__fieldset review-form__fieldset--places">
               <legend class="review-form__legend">Посещенные достопримечательности:</legend>
               <input class="review-form__input review-form__input--checkbox visually-hidden" id="devilsBridge"
                 type="checkbox" name="devilsBridge">
               <label for="devilsBridge" class="review-form__label review-form__label--questionnaire checkbox"> Мост
                 Дьявола
-
               </label>
-
               <input class="review-form__input review-form__input--checkbox visually-hidden" id="mountBell"
                 type="checkbox" name="mountBell">
-
               <label for="mountBell" class="review-form__label review-form__label--questionnaire checkbox"> Гора-Колокол
-
               </label>
               <input class="review-form__input review-form__input--checkbox visually-hidden" id="SlidePark"
                 type="checkbox" name="SlidePark">
               <label for="SlidePark" class="review-form__label review-form__label--questionnaire checkbox"> Слайд-парк
-
               </label>
-
               <input class="review-form__input review-form__input--checkbox visually-hidden" id="RedRock"
                 type="checkbox" name="RedRock">
               <label for="RedRock" class="review-form__label review-form__label--questionnaire checkbox"> Красные скалы
-
               </label>
-
             </fieldset>
-
             <fieldset class="review-form__fieldset review-form__fieldset--textarea">
               <legend class="review-form__legend">Опишите свои эмоции*:</legend>
-
-
               <textarea class="review-form__textarea" name="message" cols="30" rows="10"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-
-            <div class="popup__wrapper">
+            <div class="review-form__popup-wrapper">
               <div class="review-form__popup popup popup--error ">
                 <p class="popup__subject">Что-то пошло не так!</p>
                 <p class="popup__text"> Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
                 <button class="popup__button button popup__button--err" type="button">Ok</button>
-
               </div>
-
               <div class="review-form__popup popup popup--success">
                 <p class="popup__subject">Ваш отзыв отправлен!</p>
                 <p class="popup__text"> Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
@@ -172,29 +133,16 @@
                 <button class="popup__button button popup__button--success" type="submit">Закрыть окно</button>
               </div>
             </div>
-
-
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
             <span class="review-form__prompt">* — обязательные поля</span>
-
-
-
-
-
           </form>
-
-
         </section>
       </div>
-
     </main>
-
     <footer class="footer">
       <div class="hash">
         <p class="hash__item">#visitSEDONA</p>
       </div>
-
-
       <ul class="social">
         <li class="social__item "><a class="social__link" href="#"><svg width="18" height="15" viewBox="0 0 18 15"
               fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,69 +169,20 @@
             <span class="visually-hidden">Седона в
               YouTube</span></a></li>
       </ul>
-
       <div class="developer">
         <p class="developer__text">Разработано</p>
-        <a class="developer__link" href="#"><span class="visually-hidden">HTML Academy</span> <svg width="27"
-            height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="developer__link" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span> <svg
+            width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
               fill="black" />
           </svg>
         </a>
       </div>
-
-
     </footer>
-
-
   </div>
+  <script src="js/mobileMenu.js"></script>
   <script src="js/formPopups.js"></script>
-  <script>
-
-
-
-
-
-
-
-
-    var siteNavigationDropdown = document.querySelector(".site-navigation__dropdown");
-    var siteNavigationList = document.querySelector(".site-navigation__list");
-    let windowInnerWidth = window.innerWidth;
-
-
-
-
-    siteNavigationDropdown.classList.remove("site-navigation__dropdown--none");
-    if (windowInnerWidth < 768) {
-      siteNavigationList.classList.add("site-navigation__list--close");
-
-    }
-    else {
-
-      siteNavigationDropdown.classList.remove("site-navigation__dropdown--burger");
-      siteNavigationDropdown.classList.add("site-navigation__dropdown--cross");
-    }
-
-
-    siteNavigationDropdown.addEventListener("click", function () {
-      if (siteNavigationDropdown.classList.contains("site-navigation__dropdown--burger")) {
-        siteNavigationList.classList.remove("site-navigation__list--close");
-        siteNavigationDropdown.classList.remove("site-navigation__dropdown--burger");
-        siteNavigationDropdown.classList.add("site-navigation__dropdown--cross");
-
-      }
-
-      else {
-        siteNavigationList.classList.add("site-navigation__list--close");
-        siteNavigationDropdown.classList.remove("site-navigation__dropdown--cross");
-        siteNavigationDropdown.classList.add("site-navigation__dropdown--burger");
-      }
-
-    });
-
-  </script>
 </body>
 
 </html>

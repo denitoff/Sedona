@@ -1,5 +1,6 @@
 .popup{
   display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -10,10 +11,12 @@
 min-width: 400px;
 min-height: 347px;
   }
-
-
-
 }
+
+.popup--show{
+  display: flex;
+}
+
 .popup__subject{
   font-weight: 700;
   font-size: 18px;
@@ -27,23 +30,3 @@ line-height: 24px;
 .popup__button{
   width: 60%;
 }
-
-.popup__wrapper{
-  position: relative;
-  display: block;
-  width: 100%;
-
-}
-.review-form__popup
-{
-  display: none;
-  top: -450px;
-}
-.popup--show{
-  display: flex;
-}
-
-
-// .popup--success{
-//   display: flex;
-// }

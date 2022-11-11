@@ -45,12 +45,12 @@ img {
   display: none;
 }
 @media (min-width: 1200px) {
-  .hide--desktop {
+  .hide-desktop {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .hide--tablet {
+  .hide-tablet {
     display: none;
   }
 }
@@ -477,6 +477,9 @@ img {
 .entertainments__title {
   margin-top: 40px;
 }
+.benefits__item--3columns {
+  min-width: 100%;
+}
 .entertainments {
   background-color: #FFFFFF;
   margin: 0;
@@ -488,6 +491,7 @@ img {
 @media (min-width: 768px) {
   .entertainments {
     flex-direction: row;
+    justify-content: stretch;
   }
 }
 .entertainments__item {
@@ -632,6 +636,10 @@ img {
 }
 .map img {
   display: block;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 .footer {
   background-color: #FFFFFF;
@@ -995,8 +1003,21 @@ img {
 .review-form__input--field-error {
   background-color: red;
 }
+.review-form__popup-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.review-form__popup {
+  display: none;
+  top: -450px;
+}
+.popup--show {
+  display: flex;
+}
 .popup {
   display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -1010,6 +1031,9 @@ img {
     min-height: 347px;
   }
 }
+.popup--show {
+  display: flex;
+}
 .popup__subject {
   font-weight: 700;
   font-size: 18px;
@@ -1022,18 +1046,6 @@ img {
 }
 .popup__button {
   width: 60%;
-}
-.popup__wrapper {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-.review-form__popup {
-  display: none;
-  top: -450px;
-}
-.popup--show {
-  display: flex;
 }
 .photo-gallery {
   margin-bottom: 32px;
@@ -1228,6 +1240,12 @@ img {
     padding-right: 60px;
   }
 }
+.video-gallery__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .video-gallery__subject {
   font-weight: 700;
   font-size: 18px;
@@ -1253,12 +1271,6 @@ img {
 .video {
   margin: 0;
   padding: 0;
-}
-.video__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .video__video {
   -o-object-fit: cover;
