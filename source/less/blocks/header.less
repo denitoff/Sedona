@@ -10,14 +10,16 @@
 .header__logo{
   width: 102px;
   height: 84px;
-}
-.header__home-link{
   position: absolute;
   right: 0;
   left: 0;
-  width: 102px;
-  height: 84px;
+
   bottom: -30px;
   margin-right: auto;
   margin-left: auto;
+  @media(min-width:@desktop-width){
+    width: 187px;
+    height: 97px;
+  }
 }
+
