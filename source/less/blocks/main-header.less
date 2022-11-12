@@ -16,25 +16,60 @@
 .main-header__image-container{
   background-image: url("../img/text-welcome-sedona etc.svg"),
     url("../img/intro-triangle.svg"),
-    url("../img/mount-back-welcome-section-desktop.jpg");
-  background-size: 90% 70%,
-    1200px, //
-                  cover;
+    url("../img/mount-back-welcome-section-mobile.jpg");
+  background-size:
+    90% 70%,
+    1200px,
+    cover;
   min-height: 389px;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
   margin-bottom: -1px;
-  @media (min-width: @tablet-width) {
-    min-height: 518px;
+  @media (min-resolution: 2dppx){
+    background-image: url("../img/text-welcome-sedona etc.svg"),
+      url("../img/intro-triangle.svg"),
+      url("../img/mount-back-welcome-section-mobile@2x.jpg");
   }
 
-}
 
+
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+
+    background-image: url("../img/text-welcome-sedona etc.svg"),
+      url("../img/intro-triangle.svg"),
+      url("../img/mount-back-welcome-section-tablet.jpg");
+    @media (min-resolution: 2dppx){
+      background-image: url("../img/text-welcome-sedona etc.svg"),
+        url("../img/intro-triangle.svg"),
+        url("../img/mount-back-welcome-section-tablet@2x.jpg");
+    }
+
+
+
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/text-welcome-sedona etc.svg"),
+      url("../img/intro-triangle.svg"),
+      url("../img/mount-back-welcome-section-desktop.jpg");
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../img/text-welcome-sedona etc.svg"),
+        url("../img/intro-triangle.svg"),
+        url("../img/mount-back-welcome-section-desktop@2x.jpg");
+    }
+  }
+
+
+
+}
+// !!!!!!!!!!!!!!!------------------------------------!!!!!!!!!!
 
 .main-header--inner-page .main-header__image-container{
   background-image: url("../img/SEDONA.svg"),
     url("../img/intro-triangle.svg"),
-    url("../img/mount-back-welcome-section-desktop.jpg");
+    url("../img/mount-back-welcome-section-mobile.jpg");
   background-size: 70% 50%,
     1200px, //
     cover;
@@ -42,10 +77,38 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
 
-  @media (min-width: @tablet-width) {
-    min-height: 290px;
+  @media (min-resolution: 2dppx){
+    background-image: url("../img/SEDONA.svg"),
+      url("../img/intro-triangle.svg"),
+      url("../img/mount-back-welcome-section-mobile@2x.jpg");
   }
 
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/SEDONA.svg"),
+      url("../img/intro-triangle.svg"),
+      url("../img/mount-back-welcome-section-tablet.jpg");
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../img/SEDONA.svg"),
+        url("../img/intro-triangle.svg"),
+        url("../img/mount-back-welcome-section-tablet@2x.jpg");
+
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/SEDONA.svg"),
+        url("../img/intro-triangle.svg"),
+        url("../img/mount-back-welcome-section-desktop.jpg");
+      @media (min-resolution: 2dppx){
+        background-image: url("../img/SEDONA.svg"),
+          url("../img/intro-triangle.svg"),
+          url("../img/mount-back-welcome-section-desktop@2x.jpg");
+
+      }
+    }
+
+  }
 }
 // ------------------------------------------------------------
 
@@ -93,3 +156,41 @@
   color: @basic-gray--dark;
 
 }
+
+
+// НЕ ТРОГАТЬ
+// ---------------------------------------------------
+// .main-header__image-container{
+//   background-image: url("../img/text-welcome-sedona etc.svg"),
+//     url("../img/intro-triangle.svg"),
+//     url("../img/mount-back-welcome-section-desktop.jpg");
+//   background-size: 90% 70%,
+//     1200px, //
+//                   cover;
+//   min-height: 389px;
+//   background-repeat: no-repeat, no-repeat, no-repeat;
+//   background-position: center, bottom, center;
+//   margin-bottom: -1px;
+//   @media (min-width: @tablet-width) {
+//     min-height: 518px;
+//   }
+
+// }
+
+
+// .main-header--inner-page .main-header__image-container{
+//   background-image: url("../img/SEDONA.svg"),
+//     url("../img/intro-triangle.svg"),
+//     url("../img/mount-back-welcome-section-desktop.jpg");
+//   background-size: 70% 50%,
+//     1200px, //
+//     cover;
+//   min-height: 160px;
+//   background-repeat: no-repeat, no-repeat, no-repeat;
+//   background-position: center, bottom, center;
+
+//   @media (min-width: @tablet-width) {
+//     min-height: 290px;
+//   }
+
+// }
