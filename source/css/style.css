@@ -307,6 +307,7 @@ img {
   text-align: center;
 }
 .main-header__image-container {
+  display: block;
   background-image: url("../img/text-welcome-sedona etc.svg"), url("../img/intro-triangle.svg"), url("../img/mount-back-welcome-section-mobile.jpg");
   background-size: 90% 70%,
     1200px,
@@ -343,6 +344,7 @@ img {
   }
 }
 .main-header--inner-page .main-header__image-container {
+  display: block;
   background-image: url("../img/SEDONA.svg"), url("../img/intro-triangle.svg"), url("../img/mount-back-welcome-section-mobile.jpg");
   background-size: 70% 50%, 1200px, cover;
   min-height: 160px;
@@ -476,10 +478,13 @@ img {
 .benefits__item--big::after {
   content: "";
   min-height: 256px;
+  min-width: 320px;
+  background-size: cover;
   flex-grow: 1;
 }
 @media (min-width: 768px) {
   .benefits__item--big::after {
+    min-height: 256px;
     min-width: 512px;
   }
 }
@@ -493,10 +498,20 @@ img {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .benefits__item--street-photo.benefits__item--big::after {
+    background-image: url("../img/street-benefits-section@2x.jpg");
+  }
+}
 .benefits__item--bridge-photo.benefits__item--big::after {
   background-image: url("../img/devils-bridge-benefits-section.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .benefits__item--bridge-photo.benefits__item--big::after {
+    background-image: url("../img/devils-bridge-benefits-section@2x.jpg");
+  }
 }
 .benefits__item--big .benefits__title,
 .benefits__item--big .benefits__text,
@@ -1128,7 +1143,8 @@ img {
 }
 @media (min-width: 768px) {
   .photo__image {
-    height: 267px;
+    height: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {

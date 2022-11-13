@@ -73,14 +73,18 @@
 
 .benefits__item--big::after{
   content:"";
-  min-height: 256px;
+  min-height: 256px;  ////
+  min-width: 320px;
+  background-size: cover;
 
   flex-grow: 1;
   @media (min-width: @tablet-width) {
+    min-height: 256px; //
     min-width: 512px;
   }
 
   @media (min-width: @desktop-width) {
+
     min-width: 780px;
   }
 }
@@ -90,13 +94,27 @@
   background-image: url("../img/street-benefits-section.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  @media (min-width:@desktop-width){
+    @media (min-resolution:2dppx){
+      background-image: url("../img/street-benefits-section@2x.jpg");
+    }
+  }
 }
 
 .benefits__item--bridge-photo.benefits__item--big::after{
   background-image: url("../img/devils-bridge-benefits-section.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  @media(min-width: @desktop-width){
+
+    @media (min-resolution: 2dppx){
+      background-image: url("../img/devils-bridge-benefits-section@2x.jpg");
+    }
+
+  }
+
 }
+
 
 .benefits__item--big .benefits__title,
 .benefits__item--big .benefits__text,

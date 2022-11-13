@@ -17,7 +17,8 @@
     <header class="header">
       <a class="header__home-link" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/Sedona-logo-desktop.svg.svg">
+          <source media="(min-width: 1200px)" srcset="img/Sedona-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/Sedona-logo-tablet.svg">
           <img class="header__logo" src="img/Sedona-logo.svg" width="102" height="84" alt="Логотип Седона">
         </picture>
       </a>
@@ -54,8 +55,12 @@
             <li class="photo__item">
               <figure class="photo__thumbnail">
                 <a class="photo__link-to-original" href="#">
-                  <img class="photo__image" src="img/gallery/sunset-road.jpg"
-                    alt="Догога уходящая в закат, в дали виден каньон">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/sunset-road-desktop.jpg 1x, img/gallery/sunset-road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/sunset-road-tablet.jpg 1x, img/gallery/sunset-road-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/gallery/sunset-road-mobile.jpg"
+                  srcset="img/gallery/sunset-road-mobile@2x.jpg 2x"  alt="Догога уходящая в закат, в дали виден каньон">
+                </picture>
                 </a>
                 <figcaption class="photo__caption">
                   <h4 class="photo__title">Неродные просторы</h4>
@@ -66,7 +71,11 @@
             <li class="photo__item">
               <figure class="photo__thumbnail">
                 <a class="photo__link-to-original" href="#">
-                  <img class="photo__image" src="img/gallery/cactus.jpg" alt="Цветущий кактус на фоне каньона">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/cactus-desktop.jpg 1x, img/gallery/cactus-desktop@2x.jpg 2x ">
+                    <source media="(min-width: 768px)" srcset="img/gallery/cactus-tablet.jpg 1x, img/gallery/cactus-tablet@2x.jpg 2x ">
+                  <img class="photo__image" src="img/gallery/cactus-mobile.jpg" srcset="img/gallery/cactus-mobile@2x.jpg 2x" alt="Цветущий кактус на фоне каньона">
+                </picture>
                 </a>
                 <figcaption class="photo__caption">
                   <h4 class="photo__title">Местная растительность</h4>
@@ -77,9 +86,13 @@
             <li class="photo__item">
               <figure class="photo__thumbnail">
                 <a class="photo__link-to-original" href="#">
-                  <img class="photo__image" src="img/gallery/forest-serpantine.jpg"
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/forest-serpantine-desktop.jpg 1x, img/gallery/forest-serpantine-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/forest-serpantine-tablet.jpg 1x, img/gallery/forest-serpantine-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/gallery/forest-serpantine-mobile.jpg" srcset="img/gallery/forest-serpantine-mobile@2x.jpg 2x"
                     alt="Дорога серпантином проходящая через лес, ведет куда-то наверх">
-                </a>
+                  </picture>
+                  </a>
                 <figcaption class="photo__caption">
                   <h4 class="photo__title">Дорога на север</h4>
                   <p class="photo__author">Автор фото: <span> Борис</span></p>
@@ -89,8 +102,12 @@
             <li class="photo__item">
               <figure class="photo__thumbnail">
                 <a class="photo__link-to-original" href="#">
-                  <img class="photo__image" src="img/gallery/devils-bridge.jpg"
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/devils-bridge-desktop.jpg 1x, img/gallery/devils-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/devils-bridge-tablet.jpg 1x, img/gallery/devils-bridge-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/gallery/devils-bridge-mobile.jpg" srcset="img/gallery/devils-bridge-mobile@2x.jpg 2x"
                     alt="Природный мост из каменной породы, на фоне каньона">
+                  </picture>
                 </a>
                 <figcaption class="photo__caption">
                   <h4 class="photo__title">Мост дьявола</h4>
