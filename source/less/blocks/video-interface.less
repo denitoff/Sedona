@@ -8,23 +8,28 @@
   min-width: 280px;
   width: 90%;
   height: 110px;
-  & svg:hover path{
+
+  & svg{
+    fill:#5C6870;
+  }
+
+  & svg:hover  {
     fill: @video-button-hover;
   }
-  & svg:active path{
+  & svg:active {
     fill: @video-button-down;
   }
   @media(min-width:@tablet-width){
     width: 100%;
     height: 93px;
     background-color: fade(@basic-black, 60%);
-    & svg path{
+    & svg {
       fill: @basic-white;
     }
-    & svg:hover path{
+    & svg:hover {
       fill: fade(@basic-white, 60%);
     }
-    & svg:active path{
+    & svg:active {
       fill: fade(@basic-white, 30%);
     }
   }
@@ -101,7 +106,10 @@
   height: 20px;
   bottom:20px;
   right: 20px;
+  cursor: pointer;
   @media(min-width:@tablet-width){
     bottom:35px;
   }
 }
+
+
