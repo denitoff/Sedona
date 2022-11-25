@@ -1,4 +1,5 @@
-.video-interface{
+/* stylelint-disable color-hex-case */
+.video-interface {
 
   display: flex;
   flex-wrap: wrap;
@@ -9,107 +10,108 @@
   width: 90%;
   height: 110px;
 
-  & svg{
-    fill:#5C6870;
+  & svg {
+    fill: #5C6870;
   }
 
-  & svg:hover  {
+  & svg:hover {
     fill: @video-button-hover;
   }
+
   & svg:active {
     fill: @video-button-down;
   }
-  @media(min-width:@tablet-width){
+
+  @media (min-width: @tablet-width) {
     width: 100%;
     height: 93px;
     background-color: fade(@basic-black, 60%);
+
     & svg {
       fill: @basic-white;
     }
+
     & svg:hover {
       fill: fade(@basic-white, 60%);
     }
+
     & svg:active {
       fill: fade(@basic-white, 30%);
     }
   }
-
 }
 
-.video-gallery__video-interface
-{
+.video-gallery__video-interface {
   position: absolute;
   z-index: 1;
   bottom: -66px;
-  @media(min-width:@tablet-width){
+
+  @media (min-width: @tablet-width) {
     bottom: 3px;
-
   }
-
 }
 
-.video-interface-range{
+.video-interface-range {
   position: absolute;
   left: 22px;
-
   top: 22px;
   width: 90%;
   height: 3px;
   background-color: fade(@basic-white, 20%);
-  @media(min-width:@tablet-width){
+
+  @media (min-width: @tablet-width) {
     width: 60%;
-    top:46px;
+    top: 46px;
     left: 93px;
   }
-
 }
 
-.video-interface-range__toggle{
+.video-interface-range__toggle {
   position: relative;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: @basic-white;
   top: -5px;
-  left:20%;
+  left: 20%;
   cursor: pointer;
 }
 
-.video-interface__button--replay{
+.video-interface__button--replay {
   position: absolute;
   width: 20px;
   height: 20px;
-  bottom:20px;
+  bottom: 20px;
   left: 20px;
   cursor: pointer;
 
-  @media(min-width:@tablet-width){
-    bottom:35px;
+  @media (min-width: @tablet-width) {
+    bottom: 35px;
   }
-
 }
-.video-interface__subtitle{
+
+.video-interface__subtitle {
   position: absolute;
   width: 32px;
   height: 20px;
-  bottom:20px;
+  bottom: 20px;
   right: 60px;
   cursor: pointer;
-  @media(min-width:@tablet-width){
-    bottom:35px;
+
+  @media (min-width: @tablet-width) {
+    bottom: 35px;
   }
 }
 
-.video-interface__fullscreen{
+.video-interface__fullscreen {
   position: absolute;
   width: 20px;
   height: 20px;
-  bottom:20px;
+  bottom: 20px;
   right: 20px;
   cursor: pointer;
-  @media(min-width:@tablet-width){
-    bottom:35px;
+
+  @media (min-width: @tablet-width) {
+    bottom: 35px;
   }
 }
-
-

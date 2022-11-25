@@ -1,24 +1,28 @@
 
-*{
+* {
   box-sizing: border-box;
 }
-p{
+
+p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
-a{
+
+a {
   text-decoration: none;
 }
-ul{
+
+ul {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,23 +35,23 @@ img {
   overflow: hidden;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.hide-desktop{
+.hide-desktop {
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.hide-tablet{
+.hide-tablet {
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.hide--mobile{
+.hide--mobile {
   @media (max-width: @mobile-width-only) {
     display: none;
   }

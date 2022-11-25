@@ -1,140 +1,108 @@
-.photo
-{
+/* stylelint-disable color-hex-case */
+.photo {
   .margin-padding--0();
   display: flex;
   flex-direction: column;
   align-items: center;
 
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
   }
-  @media(min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
 
-
-
-.photo__image{
+.photo__image {
   object-fit: cover;
-  @media(max-width:@mobile-width-only){
+
+  @media (max-width: @mobile-width-only) {
     width: 280px;
     height: 280px;
   }
 
-  @media(min-width:@tablet-width){
-
+  @media (min-width: @tablet-width) {
     height: 100%;
     width: 100%;
-
   }
 
-  @media(min-width:@desktop-width){
-
-
-
+  @media (min-width: @desktop-width) {
     height: 100%;
     width: 100%;
-
   }
-
-
-
-
 }
 
 
-.photo__thumbnail
-{
+.photo__thumbnail {
   .margin-padding--0();
-
 }
 
-.photo__caption{
-  @media(max-width:@mobile-width-only){
+.photo__caption {
+  @media (max-width: @mobile-width-only) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  @media(min-width:@tablet-width){
+  @media (min-width: @tablet-width) {
     position: relative;
-
   }
-  @media(min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     position: absolute;
     background-color: fade(@basic-white, 30%);
-
     z-index: 1;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     color: @basic-white;
-    padding-left:20px;
-    padding-bottom:20px;
-
+    padding-left: 20px;
+    padding-bottom: 20px;
   }
-
 }
+
 .photo__item:nth-child(odd) {
-  @media(min-width:@tablet-width){
+  @media (min-width: @tablet-width) {
     background-color: #F2F2F2;
   }
-
-
-
 }
 
-
-
-.photo__caption:last-child{
+.photo__caption:last-child {
   padding-bottom: 15px;
-
 }
 
 
-
-
-
-.photo__item:last-child{
-
+.photo__item:last-child {
   border-bottom: 1px solid #E5E5E5;
-
 }
 
 
-.photo__item{
-
+.photo__item {
   margin-bottom: 15px;
-
   padding-top: 23px;
-
   border-top: 1px solid #E5E5E5;
-  @media(min-width:@tablet-width){
-    border-top:none;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
     width: 50%;
     padding-top: 0;
     margin-bottom: 0;
   }
-  @media(min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     position: relative;
     width: 100%;
     min-height: 267px;
-
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-top: 0;
   }
 }
 
 
-.photo__item:first-child{
-
-
+.photo__item:first-child {
   @media (min-width: @tablet-width) {
     width: 100%;
   }
@@ -143,78 +111,70 @@
     height: 400px;
   }
 
-
-  @media(min-width:@desktop-width){
+  @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: -1;
   }
-
-
-
 }
 
-.photo__item:first-child .photo__image{
-  @media(min-width:@desktop-width){
+.photo__item:first-child .photo__image {
+  @media (min-width: @desktop-width) {
     height: 400px;
   }
 }
-.photo__item:not(:first-child) .photo__image{
-  @media(min-width:@desktop-width){
+
+.photo__item:not(:first-child) .photo__image {
+  @media (min-width: @desktop-width) {
     height: 267px;
   }
 }
 
-
-.photo__title
-{.margin-padding--0;
+.photo__title {
+  .margin-padding--0;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-
-
-
-
 }
-.photo__author{
+
+.photo__author {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color:@basic-gray--dark;
+  color: @basic-gray--dark;
   text-transform: none;
   .margin-padding--0;
   text-align: left;
-  @media(min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     color: inherit;
   }
 }
-.photo__likes{
+
+.photo__likes {
   display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   margin-top: 13px;
 
-  @media(min-width:@tablet-width){
+  @media (min-width: @tablet-width) {
     position: absolute;
     right: 20px;
-    top:10px;
+    top: 10px;
   }
-
-
 }
-.photo__likes::before{
+
+.photo__likes::before {
   content: "";
 
   display: block;
   width: 23px;
   height: 23px;
   margin-right: 10px;
-
-
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
-  @media(min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     background-image: url("../img/like-icon--white.svg");
   }
-
 }

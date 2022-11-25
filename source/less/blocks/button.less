@@ -1,26 +1,27 @@
-.button
-{background-color: @basic-blue;
-
+.button {
+  background-color: @basic-blue;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color:@basic-white;
+  color: @basic-white;
   display: block;
-  padding:15px;
+  padding: 15px;
   text-align: center;
   border: none;
   cursor: pointer;
   text-transform: inherit;
   width: 280px;
 
-  &:hover{
+  &:hover {
     background-color: @button-hover;
   }
-  &:active{
-    background-color:@button-down;
+
+  &:active {
+    background-color: @button-down;
     color: fade(@basic-white, 30%);
   }
-  &:disabled{
-    background-color:@button-disabled;
+
+  &:disabled {
+    background-color: @button-disabled;
   }
 }

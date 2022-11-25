@@ -1,11 +1,13 @@
-.main
-{background-color: @basic-white;}
+.main {
+  background-color: @basic-white;
+}
 
-.main__container{
-  @media(max-width: @mobile-width-only){
+.main__container {
+  @media (max-width: @mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   @media (min-width: @tablet-width) {
     padding-left: 60px;
     padding-right: 60px;
@@ -16,9 +18,10 @@
     padding-right: 120px;
   }
 }
-.main__container--wide-in-desk{
+
+.main__container--wide-in-desk {
   @media (min-width: @desktop-width) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

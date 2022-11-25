@@ -1,27 +1,24 @@
 
-.benefits__list{
+.benefits__list {
   .margin-padding--0();
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-
   }
-
-
-
 }
 
-.benefits__item:nth-child(1){
+.benefits__item:nth-child(1) {
   @media (max-width: @mobile-width-only) {
     background-image: url("../img/intro-triangle-only-mobile.svg");
     background-repeat: no-repeat;
-    background-position:  center top;
+    background-position: center top;
     background-size: 768px 30px;
   }
 }
 
 
-.benefits__item{
+.benefits__item {
   background-color: @basic-gray--light;
   min-height: 168px;
   display: flex;
@@ -33,51 +30,48 @@
   border-bottom: 1px solid @basic-gray--medium;
 
   @media (min-width: @tablet-width) {
-    min-width: 33.3%;  //
-    max-width: 33.3%;   //
+    min-width: 33.3%;
+    max-width: 33.3%;
     min-height: 256px;
-
     border-bottom: none;
   }
-
 }
 
-
-
-.benefits__container{
-  display:flex;
+.benefits__container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 211px;
   flex-grow: 1;
+
   @media (min-width: @tablet-width) {
     min-width: 33.3%;
     min-height: 256px;
   }
 }
 
-.benefits__item--big{
+.benefits__item--big {
   background-color: @basic-blue;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    min-width: 100%;   //
-
+    min-width: 100%;
   }
 }
-.benefits__item--big-reverse{
+
+.benefits__item--big-reverse {
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
   }
 }
 
-.benefits__item--big::after{
-  content:"";
-  min-height: 256px;  ////
+.benefits__item--big::after {
+  content: "";
+  min-height: 256px;
   min-width: 320px;
   background-size: cover;
-
   flex-grow: 1;
+
   @media (min-width: @tablet-width) {
     min-height: 256px; //
     min-width: 512px;
@@ -89,69 +83,64 @@
   }
 }
 
-.benefits__item--street-photo.benefits__item--big::after{
+.benefits__item--street-photo.benefits__item--big::after {
 
   background-image: url("../img/street-benefits-section.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  @media (min-width:@desktop-width){
-    @media (min-resolution:2dppx){
+
+  @media (min-width: @desktop-width) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/street-benefits-section@2x.jpg");
     }
   }
 }
 
-.benefits__item--bridge-photo.benefits__item--big::after{
+.benefits__item--bridge-photo.benefits__item--big::after {
   background-image: url("../img/devils-bridge-benefits-section.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  @media(min-width: @desktop-width){
 
-    @media (min-resolution: 2dppx){
+  @media (min-width: @desktop-width) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/devils-bridge-benefits-section@2x.jpg");
     }
-
   }
-
 }
 
 
 .benefits__item--big .benefits__title,
 .benefits__item--big .benefits__text,
-.benefits__item--big .benefits__number
-{
+.benefits__item--big .benefits__number {
   color: @basic-white;
-
 }
 
-
-
-.benefits__title{
+.benefits__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
 }
 
 
-.benefits__text{
+.benefits__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: @basic-gray--dark;
 }
 
-.benefits__number{
+.benefits__number {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color:@basic-gray--dark;
+  color: @basic-gray--dark;
 }
-.entertainments__title{
+
+.entertainments__title {
   margin-top: 40px;
 }
 
 
-.benefits__item--3columns{
+.benefits__item--3columns {
   min-width: 100%;
 }

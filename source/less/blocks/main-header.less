@@ -1,19 +1,14 @@
 
 
-.main-header
-{
+.main-header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-
-
 }
 
-// ----------------------------------------------------------------
-
-.main-header__image-container{
+.main-header__image-container {
   display: block;
   background-image: url("../img/text-welcome-sedona etc.svg"),
     url("../img/intro-triangle.svg"),
@@ -26,28 +21,24 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
   margin-bottom: -1px;
-  @media (min-resolution: 2dppx){
+
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/text-welcome-sedona etc.svg"),
       url("../img/intro-triangle.svg"),
       url("../img/mount-back-welcome-section-mobile@2x.jpg");
   }
 
-
-
   @media (min-width: @tablet-width) {
     min-height: 518px;
-
     background-image: url("../img/text-welcome-sedona etc.svg"),
       url("../img/intro-triangle.svg"),
       url("../img/mount-back-welcome-section-tablet.jpg");
-    @media (min-resolution: 2dppx){
+
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/text-welcome-sedona etc.svg"),
         url("../img/intro-triangle.svg"),
         url("../img/mount-back-welcome-section-tablet@2x.jpg");
     }
-
-
-
   }
 
   @media (min-width: @desktop-width) {
@@ -55,19 +46,15 @@
       url("../img/intro-triangle.svg"),
       url("../img/mount-back-welcome-section-desktop.jpg");
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/text-welcome-sedona etc.svg"),
         url("../img/intro-triangle.svg"),
         url("../img/mount-back-welcome-section-desktop@2x.jpg");
     }
   }
-
-
-
 }
-// !!!!!!!!!!!!!!!------------------------------------!!!!!!!!!!
 
-.main-header--inner-page .main-header__image-container{
+.main-header--inner-page .main-header__image-container {
   display: block;
   background-image: url("../img/SEDONA.svg"),
     url("../img/intro-triangle.svg"),
@@ -79,7 +66,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, bottom, center;
 
-  @media (min-resolution: 2dppx){
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/SEDONA.svg"),
       url("../img/intro-triangle.svg"),
       url("../img/mount-back-welcome-section-mobile@2x.jpg");
@@ -91,58 +78,51 @@
       url("../img/intro-triangle.svg"),
       url("../img/mount-back-welcome-section-tablet.jpg");
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/SEDONA.svg"),
         url("../img/intro-triangle.svg"),
         url("../img/mount-back-welcome-section-tablet@2x.jpg");
-
     }
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/SEDONA.svg"),
         url("../img/intro-triangle.svg"),
         url("../img/mount-back-welcome-section-desktop.jpg");
-      @media (min-resolution: 2dppx){
+
+      @media (min-resolution: 2dppx) {
         background-image: url("../img/SEDONA.svg"),
           url("../img/intro-triangle.svg"),
           url("../img/mount-back-welcome-section-desktop@2x.jpg");
-
       }
     }
-
   }
 }
 // ------------------------------------------------------------
 
-.main-header__text-container{
+.main-header__text-container {
   text-align: center;
   min-height: 206px;
   background-color: @basic-white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media(min-width:@tablet-width){
+
+  @media (min-width: @tablet-width) {
     width: 70%;
     align-self: center;
-
   }
 }
 
-
-.main-header--inner-page .main-header__title{
+.main-header--inner-page .main-header__title {
   @media (min-width: @tablet-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
   }
-
-
 }
 
 
-
-
-.main-header__title{
+.main-header__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -150,49 +130,9 @@
   margin-bottom: 40px;
 }
 
-.main-header__text
-{
+.main-header__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: @basic-gray--dark;
-
 }
-
-
-// НЕ ТРОГАТЬ
-// ---------------------------------------------------
-// .main-header__image-container{
-//   background-image: url("../img/text-welcome-sedona etc.svg"),
-//     url("../img/intro-triangle.svg"),
-//     url("../img/mount-back-welcome-section-desktop.jpg");
-//   background-size: 90% 70%,
-//     1200px, //
-//                   cover;
-//   min-height: 389px;
-//   background-repeat: no-repeat, no-repeat, no-repeat;
-//   background-position: center, bottom, center;
-//   margin-bottom: -1px;
-//   @media (min-width: @tablet-width) {
-//     min-height: 518px;
-//   }
-
-// }
-
-
-// .main-header--inner-page .main-header__image-container{
-//   background-image: url("../img/SEDONA.svg"),
-//     url("../img/intro-triangle.svg"),
-//     url("../img/mount-back-welcome-section-desktop.jpg");
-//   background-size: 70% 50%,
-//     1200px, //
-//     cover;
-//   min-height: 160px;
-//   background-repeat: no-repeat, no-repeat, no-repeat;
-//   background-position: center, bottom, center;
-
-//   @media (min-width: @tablet-width) {
-//     min-height: 290px;
-//   }
-
-// }
